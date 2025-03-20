@@ -5,7 +5,7 @@ from tkinter import filedialog, messagebox
 class PlanilhaConverterUI:
     def __init__(self, root):
         self.root = root
-        self.root.title("ACCORD - Conversor de Planilha para TXT")
+        self.root.title("Conversor de Planilha para TXT")
         self.root.geometry("450x250")
 
         self.entrada_var = tk.StringVar()
