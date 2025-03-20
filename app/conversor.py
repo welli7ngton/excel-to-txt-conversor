@@ -39,10 +39,7 @@ def formatar_rendimento(valor):
     else:
         valor = f"{float(valor):.2f}"
         valor = str(valor).replace('.', '')
-        # print(valor)  # str
         valor = valor.zfill(TAMANHO_RENDIMENTO)
-        # print(valor)  # str
-        # sleep(898999)
     return valor
 
 
@@ -91,21 +88,3 @@ def processar_planilha(arquivo_entrada: str, nome_planilha: str, arquivo_saida: 
 
     except Exception as e:
         raise e
-
-
-if __name__ == '__main__':
-    # base_path = r'C:\Users\wellingtonalmeida\Downloads'
-    # planilha = base_path + r'\teste.xls'
-    # resultado = base_path + r'\saida'
-
-    # print(planilha, resultado, sep='\n')
-
-    # processar_planilha(planilha, 'REGISTRO-Y570', resultado)
-
-    base_2023 = r'C:\Users\wellingtonalmeida\Desktop\assets\xlsx'
-    planilha_2023 = base_2023 + r'\exemplo.xlsx'
-    resultado_2023 = base_2023 + r'\saida'
-
-    print(planilha_2023, resultado_2023, sep='\n')
-
-    processar_planilha(planilha_2023, 'REGISTRO-Y570', resultado_2023)
